@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive-2</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        @keyframes marquee {
+
+            0% {
+                transform: translateX(0%);
+            }
+
+            100% {
+                transform: translateX(-70%);
+            }
+        }
+
+        .marquee {
+            animation: marquee 8s linear infinite;
+        }
+        button:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body class="p-3">
+    <div class="container w-full p-1">
+
+    <div class="inner w-full border-1 p-5 mb-5">
+
+        <div class="nav w-full border-b-2 flex items-center justify-between p-5">
+            <div class="name flex justify-between
+            items-center w-full
+            lg:justify-start lg:gap-2">
+                <img src="assets/logo.png" alt="" class="w-3/10
+                lg:w-1/10">
+                <h1 class="text-4xl">FYLAA</h1>
+            </div>
+            <div class="tabs w-full hidden 
+            lg:block px-5">
+                <ul class="flex gap-8 w-full">
+                    <li class="text-lg font-[Roboto_Mono]"><a href="services.html">Services</a></li>
+                    <li class="text-lg font-[Roboto_Mono]"><a href="allwork.html">Work</a></li>
+                    <li class="text-lg font-[Roboto_Mono]">Studio</li>
+                    <li class="text-lg font-[Roboto_Mono]">Blog</li>
+                    <li class="text-lg font-[Roboto_Mono]">Pages</li>
+                    <button class="w-1/4 bg-black text-white rounded-lg">
+                        <h1 class="text-lg font-[Roboto_Mono] px-3 py-1"><a href="https://www.instagram.com/16_shlok/">LET'S TALK</a></h1>
+                    </button>
+                </ul>
+            </div>
+        </div>
+
+        <div class="view-1 w-full flex flex-col gap-[0.3rem] lg:flex-row mt-5">
+            <div class="text flex flex-col">
+                <h1 class="font-[Syne] text-[3rem] font-normal leading-[1] tracking-wider w-9.5/10 
+            md:font-medium md:w-full md:tracking-normal
+            lg:text-[5rem]">
+                    We are a digital agency from Lisbon.</h1>
+
+                <h3 class="w-full text-lg mt-[1rem] font-light opacity-0.8 text-[22px] 
+            md:w-6/10 md:text-[20px]
+            lg:text-[24px]">Elevating brands through creative
+                    digital solutions, proudly representing
+                    Lisbon's vibrant innovation.</h3>
+            </div>
+            <div class="video w-full h-full flex items-center justify-center">
+                <video src="assets/view_1_video.mp4" autoplay muted loop class="rounded-xl mt-[1rem] h-full w-full
+                lg:w-8/10 lg:object-cover lg:aspect-12/10"></video>
+            </div>
+
+        </div>
+        
+        <div class="w-full h-[1px] bg-black mt-[1.5rem] "></div>
+
+        <div class=" view-2 marque-section flex flex-col gap-5 truncate w-full items-center justify-center
+        lg:flex-row">
+            <h1 class="text-2xl mt-5
+        lg:text-lg font-['Roboto_Mono']">Our Clients</h1>
+            <div class="flex items-center h-30 mt-5 hidden opacity-0.7
+            lg:block">
+                <div class="w-[1px] h-full bg-black"></div>
+            </div>
+            <div class="flex gap-8 w-full truncate items-center justify-center ">
+                <div class="marquee flex gap-8 ">
+                    <p>IN MOTION</p>
+                    <p>Abstract</p>
+                    <p>Vision Studio</p>
+                    <p>IN MOTION</p>
+                    <p>Super Food</p>
+                    <p>Creative Studio</p>
+                </div>
+                <div class="marquee flex gap-8 ">
+                    <p>IN MOTION</p>
+                    <p>Abstract</p>
+                    <p>Vision Studio</p>
+                    <p>IN MOTION</p>
+                    <p>Super Food</p>
+                    <p>Creative Studio</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full h-[1px] bg-black mt-[1.5rem]"></div>
+
+        <div class="view-3 w-full flex gap-5">
+            <h2 class="w-2/5 hidden text-3xl p-5 font-['Roboto_Mono']
+            md:block
+            lg:block">What we do</h2>
+
+            <div class="brands w-full flex flex-col gap-5
+            lg:flex-row lg:flex-wrap lg:items-center lg:justify-center">
+
+                <div class="brand-1 w-full flex flex-col gap-10 pt-10
+                md:w-full
+                lg:w-2/5">
+                    <h1 class="w-full text-3xl font-light">Branding</h1>
+                    <p class="w-full ">We craft compelling brand identities that leave a lasting impression</p>
+                    <div class="w-full h-[1px] bg-black mt-[1.5rem] block
+                    md:block
+                    lg:hidden"></div>
+                </div>
+
+                <div class="brand-2 w-full flex flex-col gap-10 pt-10
+                md:w-full
+                lg:w-2/5">
+                    <h1 class="w-full text-3xl font-light">Design</h1>
+                    <p class="w-full ">Innovative and asthetic design that bring your ideas to life</p>
+                </div>
+
+                <div class="w-9/10 h-[1px] bg-black mt-[1.5rem]
+                lg:block"></div>
+
+                <div class="brand-3 w-full flex flex-col gap-10 pt-10
+                md:w-full
+                lg:w-2/5">
+                    <h1 class="w-full text-3xl font-light">Branding</h1>
+                    <p class="w-full ">Captivating visual storytelling tgat engages and resonates with your audience</p>
+                </div>
+
+                <div class="w-full h-[1px] bg-black mt-[1.5rem] block 
+                md:block
+                lg:hidden"></div>
+
+                <div class="brand-4 w-full flex flex-col gap-10 pt-10
+                md:w-full
+                lg:w-2/5">
+                    <h1 class="w-full text-3xl font-light
+                    md:w-3/4">Design</h1>
+                    <p class="w-full ">Engaging and presuasive content that captures attention and sparks meaningful
+                        connections</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="w-full h-[1px] bg-black mt-[1.5rem]"></div>
+
+        <div class="view-4 mt-5 relative">
+            <div class="featured-work flex flex-col gap-20 font-light
+            lg:flex-row
+            md:flex-col">
+                <div class="left-side w-full flex flex-col gap-5 relative 
+                lg:border-r-2
+                ">
+                    <div class="stick-to-top w-full flex flex-col gap-5
+                    lg:sticky top-5">
+                        <h1 class="text-6xl font-normal font-[Syne]">FEATURED WORK</h1>
+
+                        <p class="text-[22px] tracking-wider">Showcasing our standout projects that blend creativity,
+                            strategy, and cutting-edge design.</p>
+
+                        <button class="bg-zinc-900 text-white py-2 rounded-lg w-[10rem] mt-5">
+                            <a href="allwork.html" class="font-medium tracking-widest">See All Work</a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="right-side flex flex-col gap-3 items-center justify-center">
+
+                    <div class="big-img mt-5
+                    lg:w-full
+                    md:w-full">
+                        <img src="assets/big_img.webp" alt="" class="w-full rounded-xl">
+                        <div class="text flex justify-between items-center mt-1">
+                            <h1 class="font-[Syne] text-2xl">Dancing Stars</h1>
+                            <h1 class="font-[Syne] text-2xl">2023</h1>
+                        </div>
+                    </div>
+
+                    <div class="small-img flex flex-col gap-5
+                    lg:flex-row lg:flex-wrap lg:items-center lg:justify-between
+                    md:flex-row md:flex-wrap md:items-center md:justify-between">
+                        <div class="img-1 flex flex-col gap-2 mt-5
+                        lg:w-[48%]
+                        md:w-[48%]">
+                            <img src="assets/small_img-1.webp" alt="" class="w-full rounded-xl">
+                            <div class="text flex justify-between items-center mt-1">
+                                <h1 class="font-[Syne] text-2xl">Enjoy Silence</h1>
+                                <h1 class="font-[Syne] text-2xl">2023</h1>
+                            </div>
+                        </div>
+
+                        <div class="img-2 flex flex-col gap-2 mt-5
+                        lg:w-[48%]
+                        md:w-[48%]">
+                            <img src="assets/small_img-2.webp" alt="" class="w-full rounded-xl">
+                            <div class="text flex justify-between items-center mt-1">
+                                <h1 class="font-[Syne] text-2xl">Pure Vision</h1>
+                                <h1 class="font-[Syne] text-2xl">2023</h1>
+                            </div>
+                        </div>
+
+                        <div class="img-3 flex flex-col gap-2 mt-5
+                        lg:w-[48%]
+                        md:w-[48%]">
+                            <img src="assets/small_img-3.webp" alt="" class="w-full rounded-xl">
+                            <div class="text flex justify-between items-center mt-1">
+                                <h1 class="font-[Syne] text-2xl">Boring Brand</h1>
+                                <h1 class="font-[Syne] text-2xl">2023</h1>
+                            </div>
+                        </div>
+
+                        <div class="img-4 flex flex-col gap-2 mt-5
+                        lg:w-[48%]
+                        md:w-[48%]">
+                            <img src="assets/small_img-4.webp" alt="" class="w-full rounded-xl">
+                            <div class="text flex justify-between items-center mt-1">
+                                <h1 class="font-[Syne] text-2xl">New Culture</h1>
+                                <h1 class="font-[Syne] text-2xl">2023</h1>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full h-[1px] bg-black mt-[1.5rem]"></div>
+
+        <div class="view-5 mt-5 w-full flex flex-col gap-5 p-5 h-3/4
+        lg:flex-row
+        md:flex-col">
+
+            <div class="left flex flex-col gap-5 justify-start items-start 
+            lg:w-[250%]
+            md:w-full md:mb-25">
+                <h3 class="font-['Roboto_Mono'] text-base
+                ">How we Work</h3>
+                <h1 class="font-[Syne] text-5xl
+                lg:text-[66px]">We help our clients succeed with innovative strategies.</h1>
+            </div>
+
+            <div class="w-[1px] h-100 bg-black hidden
+           md:hidden
+           lg:block"></div>
+            <!-- vertical line for separation on pc screen -->
+
+            <div class="w-full h-[1px] bg-black mt-[1.5rem] hidden
+           lg:hidden
+           
+           md:block"></div>
+            <!--horizontal line for tablet view-->
+
+            <div class="right flex flex-col justify-between items-center gap-5
+            lg:pl-8
+            md:w-full">
+                <h2 class=" text-xl font-[segeo_ui]
+                lg:text-2xl
+                md:text-[22px]">Through careful analysis, creative thinking, and a deep understanding of their goals,
+                    we
+                    empower businesses to surpass expectations and thrive in today's dynamic and competitive landscape.
+                </h2>
+
+                <button class="w-[60%] bg-zinc-950 text-normal text-white rounded-lg p-2 font-medium tracking-widest self-start font-[Roboto_Mono]
+                lg:w-[45%]
+                md:w-[35%] md:text-lg"><a href="services.html">Our Services</a></button>
+
+            </div>
+        </div>
+
+        <div class="w-full h-[1px] bg-black mt-[1.5rem]"></div>
+
+        <div class="view-6 w-full flex flex-col gap-5 items-center justify-center pt-10">
+
+            <h1 class="font-[Syne] text-4xl font-medium
+            lg:text-7xl">OUR VALUES</h1>
+
+            <div class="w-full h-[1px] bg-black mt-[2.5rem]"></div>
+
+            <div class="content w-full flex flex-col gap-5
+            lg:flex-row">
+
+                <div class="left mt-5 w-full
+                lg:w-[180%] ">
+                    <img src="assets/3_standing.jpg" alt="" class="rounded-2xl w-full
+                    lg:h-full lg:object-cover lg:object-center">
+                </div>
+
+                <div class="right mt-5 flex flex-col gap-5 p-5
+                lg:border-l-1">
+                    <div class="vision flex flex-row gap-10">
+                        <div class="num">
+                            <p class="border border-black rounded-[50%] p-1 font-[Syne]">01</p>
+                        </div>
+                        <div class="text flex flex-col gap-5">
+                            <h1 class="text-4xl font-medium font-[Syne]">Vision</h1>
+                            <p class="font-Segeo_ui">Our relentless pursuit of a shared vision fuels our creativity and
+                                propels us forward. With clarity and foresight, we craft strategies that align with our
+                                clients' goals and aspirations, transforming their dreams into reality and shaping a
+                                future worth embracing.</p>
+                        </div>
+                    </div>
+
+                    <div class="w-full h-[1px] bg-black mt-[2.5rem]"></div>
+
+                    <div class="innovation flex flex-row gap-10">
+                        <div class="num">
+                            <p class="border border-black rounded-[50%] p-1 font-[Syne]">02</p>
+                        </div>
+                        <div class="text flex flex-col gap-5">
+                            <h1 class="text-4xl font-medium font-[Syne]">Innovation</h1>
+                            <p class="font-Segeo_ui">Innovation is at the core of everything we do. We embrace
+                                curiosity, explore uncharted territories, and challenge the status quo. By pushing
+                                boundaries and thinking outside the box, we create groundbreaking solutions that disrupt
+                                industries and inspire audiences.</p>
+                        </div>
+                    </div>
+
+                    <div class="w-full h-[1px] bg-black mt-[2.5rem]"></div>
+
+                    <div class="connection flex flex-row gap-10">
+                        <div class="num ">
+                            <p class="border border-black rounded-[50%] p-1 font-[Syne]">03</p>
+                        </div>
+                        <div class="text flex flex-col gap-5">
+                            <h1 class="text-4xl font-medium font-[Syne]">Connection</h1>
+                            <p class="font-Segeo_ui">We believe in the power of connection. We strive to build bridges
+                                between brands and their audiences, fostering genuine and lasting relationships. Through
+                                compelling storytelling and meaningful interactions, we create experiences that evoke
+                                emotions, strengthen bonds, and cultivate trust, ultimately turning customers into brand
+                                advocates.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full h-[1px] bg-black mt-[1.5rem]"></div>
+
+        <div class="view-7 p-5 flex flex-col gap-5 border-b-1
+        lg:flex-row">
+            <div class="left flex flex-col gap-5
+            lg:pr-15 ">
+                <h1 class="font-[Roboto_mono] text-lg">Contact</h1>
+                <h1 class="font-[Syne] text-4xl tracking-wide font-semibold
+                lg:tracking-normal lg:text-8xl lg:font-normal
+                md:text-6xl">LET'S BRING YOUR BRAND TO THE NEXT LEVEL</h1>
+            </div>
+
+            <div class="right flex flex-col justify-start gap-5 
+            lg:justify-between lg:border-l-1 lg:pl-20 lg:pt-5
+            md:gap-10">
+                <p class="font-Segeo_ui text-lg
+                lg:text-2xl
+                md:text-xl">Together, let's elevate your brand to new heights by unleashing its full potential and
+                    captivating
+                    your target audicene.</p>
+                <button class="w-2/3 bg-zinc-900 text-white font-[Roboto_mono] p-1 rounded-md
+                lg:w-1/3 lg:mt-65
+                md:w-1/5"><a href="https://www.instagram.com/16_shlok/">MORE TEMPLATES</a></button>
+            </div>
+
+        </div>
+
+        <div class="view-8 news border-b-1 p-1 mt-10">
+            <div class="text border-b-1 p-2 flex justify-center
+            lg:justify-between
+            md:justify-between">
+                <h1 class="font-[Syne] text-4xl tracking-wider mb-10">LATEST NEWS</h1>
+                <button class="hidden p-3 text-grey-700 rounded-lg border-1 font-[Roboto_Mono] mb-10 w-3/20
+                lg:block
+                md:block md:text-normal">SEE ALL</button>
+            </div>
+            <div class="article flex flex-col gap-8 items-center justify-center p-2 mb-10 mt-5
+            lg:flex-row
+            md:flex-row md:items-stretch">
+                <div class="article-1 flex flex-col gap-2 ">
+                    <img src="assets/article_1.webp" alt="" class="rounded-2xl">
+                    <h1 class="font[Roboto_Mono] text-lg ">BRANDING</h1>
+                    <p class="font-[Syne] text-2xl">Things to Look for When Comparing Branding Alternatives</p>
+                </div>
+                <div class="article-2 flex flex-col gap-2">
+                    <img src="assets/article_2.webp" alt="" class="rounded-2xl">
+                    <h1 class="font[Roboto_Mono] text-lg">BRANDING</h1>
+                    <p class="font-[Syne] text-2xl">5 Stand-out Features of Branding You Should Know</p>
+                </div>
+                <div class="article-3 flex flex-col gap-2
+                md:hidden 
+                lg:block">
+                    <img src="assets/article_3.webp" alt="" class="rounded-2xl">
+                    <h1 class="font[Roboto_Mono] text-lg">BRANDING</h1>
+                    <p class="font-[Syne] text-2xl">Branding: What Real Customers Have to Say</p>
+                </div>
+            </div>
+        </div>
+
+        <div class=" view-9 footer flex flex-col p-2 border-b-1
+        lg:flex-row
+        md:flex-row">
+            <div class="left flex flex-col gap-5 w-full   items-start mt-5
+            lg:border-r-2 lg:w-[55%]
+            md:border-r-2 md:w-[55%]">
+                <div class="brand flex gap-5 items-center">
+                    <img src="assets/logo.png" alt="" class="w-1/5
+                    md:w-2/5
+                    lg:w-1/5">
+                    <h1 class="text-lg">FYLLA</h1>
+                </div>
+                <div class="address flex flex-col justify-center mb-5">
+                    <h1>Main Street, 1</h1>
+                    <h1>22222 Berlin</h1>
+                </div>
+            </div>
+            <div class="right flex flex-col w-full
+            lg:flex-row lg:gap-40 lg:ml-15 lg:mb-5
+            md:flex-col md:ml-5">
+
+                <div class="pages flex flex-col border-b-1 gap-5 p-3
+                lg:border-none">
+                    <h1 class="font-[Syne] text-2xl">Pages</h1>
+                    <h2 class="font[Roboto_Mono]">HOME</h2>
+                    <h2 class="font[Roboto_Mono]">SERVICES</h2>
+                    <h2 class="font[Roboto_Mono]">STUDIO</h2>
+                    <h2 class="font[Roboto_Mono]">CONTACT</h2>
+                    <button class="border-1 w-2/3 text-white bg-zinc-800 rounded-md p-2
+                    lg:w-full
+                    md:w-4/10"><a href="https://www.instagram.com/16_shlok/">MORE TEMPLATES</a></button>
+                </div>
+
+                <div class="cms flex flex-col border-b-1 gap-5 p-3
+                lg:border-none">
+                    <h1 class="font-[Syne] text-2xl">CMS</h1>
+                    <h2 class="font[Roboto_Mono]">WORK</h2>
+                    <h2 class="font[Roboto_Mono]">WORK SINGLE</h2>
+                    <h2 class="font[Roboto_Mono]">BLOG</h2>
+                    <h2 class="font[Roboto_Mono]">BLOG SINGLE</h2>
+                </div>
+
+                <div class="utility-pages flex flex-col gap-5 p-3
+                lg:border-none">
+                    <h1 class="font-[Syne] text-2xl">Utility Pages</h1>
+                    <h2 class="font[Roboto_Mono]">404 ERROR PAGE</h2>
+                    <h2 class="font[Roboto_Mono]">STYLEGUIDE</h2>
+                    <h2 class="font[Roboto_Mono]">LICENSING</h2>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="view-10 made_by flex items-center justify-center w-full p-10">
+            <h1 class="font-[Roboto_Mono] text-lg font-light">MADE BY <a href="https://www.instagram.com/16_shlok/">@16_shlok</a></h1>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
